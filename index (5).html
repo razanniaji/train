@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+  <style>
+      .form-group{
+          width:30%;
+      }
+  </style>
+
+</head>
+<body>
+
+<div class="container">
+  <h2>Create Account</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+            <label for="exampleInputEmail1">First name:</label>      
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="First Name">
+
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Last name:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Last Name">
+
+        </div>
+
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+
+    <div class="form-group">
+             <label for="exampleInputPassword1">Password:</label>
+             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repeat password">
+         </div>
+ 
+         <div class="form-group">
+                <label for="exampleInputPassword1">Gender:</label><br>
+         <div class="custom-control custom-radio custom-control-inline">
+                
+                <input type="radio" class="custom-control-input" id="customRadio1" name="example1">
+                <label class="custom-control-label" for="customRadio1">Male</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="customRadio2" name="example2">
+                <label class="custom-control-label" for="customRadio2">Female</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+           <label for="exampleInputPassword1">City:</label><br>
+            <select name="city" class="custom-select mb-3">
+                    <option selected>Custom Select Menu</option>
+                    <option value="volvo">Nablus</option>
+                    <option value="fiat">Ramallah</option>
+                    <option value="audi">Jenin</option>
+                  </select>
+            </div>
+
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
